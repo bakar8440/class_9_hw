@@ -1,0 +1,289 @@
+/*common css start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section_info{
+    text-align: center;
+}
+
+.section_info h2{
+    color:#02918c;
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.section_info p{
+    font-size: 16px;
+    font-weight: 400;
+    color:#7e8287;
+    margin: auto;
+    line-height: 41px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+   text-decoration: none;
+}
+/*common css end */
+
+/* nav section CSS start */
+nav{
+    background-color:#02918c;
+}
+
+nav .container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+nav .logo{
+    width: 20%;
+}
+nav .logo img{
+    display: block;
+}
+
+nav .menu{
+    width: 80%;
+}
+
+nav .menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+ }
+
+ nav .menu ul li a{
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    padding: 26px 25px;
+    display: block;
+    transition:.6s; 
+ }
+
+ nav .menu ul li:hover  a{
+    background: #cfc91d;
+    color:black;
+ }
+
+/*nav section CSS end */
+
+/* banner section CSS start*/ 
+
+#banner{
+    background: url(../image/banner_bg.jpg);
+    height: 730px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+#banner .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner .banner_content{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+#banner h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#banner h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+
+#banner p{
+    font-size:18px;
+    font-weight: 400;
+}
+
+
+#banner img{
+    display: block;
+    margin: 50px auto;
+}
+
+#banner a{
+    font-size: 14px;
+    font-weight: 800;
+    color: black;
+    text-transform: uppercase;
+    background: #cfc91d;
+    padding: 19px 43px;
+    display: inline-block;
+   
+}
+
+/* banner section CSS end*/
+
+/* layer section CSS start */
+#banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000400;
+    opacity: .66;
+    z-index: -1;
+ }
+/* layer section CSS end*/
+
+/* about section CSS start*/
+
+#about{
+    padding: 99px 0px;
+}
+
+#about .section_info p{
+    width: 878px;
+}
+
+#about .section_info p b{
+    font-size: 23px;
+    font-weight: 800;
+}
+#about .about_item{
+    width: 25%;
+    text-align: center;
+    color: #7e8287;
+    padding: 37px 60px;
+    border-right: 1px solid #d9dbdb;
+    margin-top:85px ;
+}
+
+#about .about_item:last-child{
+    border-right: transparent;
+}
+    
+
+#about .about_item i{
+    color: #02918c;
+    font-size: 35px;
+}
+
+#about .about_item h3{
+    font-size: 16px;
+    font-weight: 800;
+    margin: 32px 0px;
+}
+
+#about .about_item p{
+    font-size: 11px;  
+}
+
+/* about section CSS end*/
+/* service section start*/
+#service{
+    background-image: url(../image/service_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 99px 0px;
+}
+
+#service .service_inner_container{
+    width: 50%;
+}
+
+#service .section_info{
+    text-align: left;
+}
+
+#service .service_item{
+    width: 50%;
+    color: #7e8287;
+    padding-right: 125px;
+    margin-top: 56px;
+}
+#service .service_item i{
+    color: #02918c;
+    font-size: 35px;
+}
+
+#service .service_item h3{
+    font-size: 16px;
+    font-weight: 800;
+    margin: 20px 0px;
+}
+
+#service .service_item p{
+    font-size: 11px;
+}
+/* service section end*/
+/* my work section start*/
+
+#my_work .section_info{
+    margin: 110px 0px 80px;
+}
+
+#my_work p{
+    width: 675px;
+}
+
+#my_work .my_work_item{
+    width: 25%;
+}
+
+#my_work .my_work_item img{
+    display: block;
+    width: 100%;
+}
+/* my work section end*/
+/* contect section start*/
+
+#contact .section_info{
+    padding: 98px 0px;
+}
+
+#contact .section_info p{
+    width: 675px;
+}
+
+/* contect section end*/
+/* copy right section start*/
+#copy_right p{
+    color:#7e8287;
+    text-align: center;
+    background-color: black;
+    padding: 35px 0px;
+}
+/* copy right section end*/
